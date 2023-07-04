@@ -1,0 +1,22 @@
+﻿
+
+<div class="about-me-intro">
+    @model AboutMeModel
+
+    @ViewBag.Message
+
+</div>
+
+<div>
+    <h2>Hard Skills</h2>
+    @foreach(var hardSkill in @Model.HardSkills)
+{
+            <ul>
+                <li>
+                    @hardSkill
+                </li>
+            </ul>
+}
+
+
+</div>

@@ -1,0 +1,17 @@
+﻿
+
+<title>Projects</title>
+
+<h1>Projects</h1>
+
+@model ProjectsModel
+
+
+<div class="projects">
+    @foreach (var project in Model.ProjectsUrls)
+    {
+            <li>
+                <a href=@project>@project</a>
+            </li>
+    }
+</div>

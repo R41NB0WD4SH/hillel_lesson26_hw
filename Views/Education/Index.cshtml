@@ -1,0 +1,42 @@
+﻿
+<title>Education</title>
+
+
+
+<div class="flex-container">
+    <div class="flex-item-left">
+        <h1>Education</h1>
+
+        <div class="education">
+            @model EducationModel
+
+            @foreach (var university in Model.EducationModels)
+            {
+                <li>
+                    @university.UniversityName
+                    <p>@university.Specialization</p>
+                    <p>@university.Degree</p>
+                    <p>@university.StydingPeriod</p>
+                </li>
+            }
+        </div>
+    </div>
+
+    <div class="flex-item-right">
+        <h1>Languages</h1>
+        <div class="languages">
+            <ul>
+                <li>
+                    English - Upper-Intermediate
+                </li>
+                <li>
+                    Ukrainian - Native Speaker
+                </li>
+                <li>
+                    Russian - Native Speaker
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </div>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\AboutMe\" />
+    <None Remove="Views\Education\" />
+    <None Remove="Views\Projects\" />
+    <None Remove="Views\Contacts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\AboutMe\" />
+    <Folder Include="Views\Education\" />
+    <Folder Include="Views\Projects\" />
+    <Folder Include="Views\Contacts\" />
+  </ItemGroup>
+</Project>

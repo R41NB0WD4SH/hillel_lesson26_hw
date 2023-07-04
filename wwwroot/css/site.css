@@ -1,0 +1,82 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #edeff2;
+}
+
+
+.mainList {
+    display: flex;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.about-me-intro
+{
+    font-size: 23px;
+    margin: 15px;
+}
+
+
+.flex-container {
+    display: flex;
+    background-color: #edeff2;
+}
+
+.flex-item-left{
+    width:700px;
+    margin:20px;
+}
+
+.flex-item-right {
+    width: 700px;
+    margin: 20px;
+}
+
+.contacts{
+    margin:20px;
+    font-size:20px;
+}
+
+.contacts > li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.projects{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.projects > li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.education > li {
+    font-size: 20px;
+    margin:10px;
+}
+
+.languages > ul {
+    font-size: 20px;
+    margin: 20px;
+}
